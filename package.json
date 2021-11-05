@@ -3,7 +3,20 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "yarn react-native start"
+    "startOriginal": "yarn react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "ios2": "react-native run-ios --device 'Beyourself Ventures’s iPhone'",
+    "start": "react-native start",
+    "test": "jest",
+    "build": "cd android && ./gradlew bundleRelease",
+    "clean": "cd android && ./gradlew clean",
+    "apk": "cd android && ./gradlew assembleRelease",
+    "device": "react-native run-android --deviceId 68efca1a",
+    "cc": "react-native start --reset-cache",
+    "log-ios": "npx react-native log-ios",
+    "log-android": "npx react-native log-android",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "react": "^17.0.2",

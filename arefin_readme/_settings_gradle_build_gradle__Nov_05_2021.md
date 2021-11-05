@@ -83,3 +83,12 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 ```
+
+
+
+### The Magic: ReactRootView#
+
+## https://reactnative.dev/docs/integration-with-existing-apps#the-magic-reactrootview
+
+
+Let's add some native code in order to start the **React Native runtime** and tell it **to render our JS component**. To do this, we're going to **create an Activity that creates a ReactRootView, starts a React** application inside it and sets it as the main content view.
