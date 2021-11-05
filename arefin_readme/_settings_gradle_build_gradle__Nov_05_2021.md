@@ -184,3 +184,105 @@ public class MyReactActivity extends Activity implements DefaultHardwareBackBtnH
 }
 ```
 
+
+## run output::
+
+```java
+
+Executing tasks: [:app:assembleDebug] in project /home/arefin/Programs/eazm__/Android_Integration_to_RN_Java/android
+
+> Task :app:generatePackageList
+> Task :app:preBuild
+> Task :app:preDebugBuild
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:generateDebugBuildConfig
+> Task :app:javaPreCompileDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:checkDebugAarMetadata
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugMainManifest
+> Task :app:mergeDebugResources
+> Task :app:processDebugManifest
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:processDebugManifestForPackage
+> Task :app:compressDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeDebugJniLibFolders
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugNativeLibs
+> Task :app:validateSigningDebug
+> Task :app:processDebugResources
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libbetter.so, libc++_shared.so, libfabricjni.so, libfb.so, libfbjni.so, libfolly_futures.so, libfolly_json.so, libglog.so, libglog_init.so, libhermes-executor-common-debug.so, libhermes-executor-common-release.so, libhermes-executor-debug.so, libhermes-executor-release.so, libhermes-inspector.so, libimagepipeline.so, libjsc.so, libjscexecutor.so, libjsi.so, libjsijniprofiler.so, libjsinspector.so, liblogger.so, libmapbufferjni.so, libnative-filters.so, libnative-imagetranscoder.so, libreact_codegen_rncore.so, libreact_debug.so, libreact_nativemodule_core.so, libreact_render_animations.so, libreact_render_attributedstring.so, libreact_render_componentregistry.so, libreact_render_core.so, libreact_render_debug.so, libreact_render_graphics.so, libreact_render_imagemanager.so, libreact_render_leakchecker.so, libreact_render_mapbuffer.so, libreact_render_mounting.so, libreact_render_runtimescheduler.so, libreact_render_scheduler.so, libreact_render_telemetry.so, libreact_render_templateprocessor.so, libreact_render_textlayoutmanager.so, libreact_render_uimanager.so, libreact_utils.so, libreactconfig.so, libreactnativeblob.so, libreactnativejni.so, libreactnativeutilsjni.so, libreactperfloggerjni.so, librrc_image.so, librrc_modal.so, librrc_progressbar.so, librrc_root.so, librrc_scrollview.so, librrc_slider.so, librrc_switch.so, librrc_text.so, librrc_textinput.so, librrc_unimplementedview.so, librrc_view.so, libturbomodulejsijni.so, libyoga.so.
+
+> Task :app:compileDebugJavaWithJavac
+Note: /home/arefin/Programs/eazm__/Android_Integration_to_RN_Java/android/app/src/main/java/com/arefin/mytime/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:mergeExtDexDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+
+BUILD SUCCESSFUL in 25s
+33 actionable tasks: 33 executed
+
+Build Analyzer results available
+
+```
+
+
+
+## yarn android output:
+
+
+```java
+
+ctionable tasks: 1 executed, 1 up-to-date
+Done in 15.22s.
+arefin@arefin-HP-ProBook-450-G0:~/Programs/eazm__/Android_Integration_to_RN_Java$ yarn android
+yarn run v1.22.5
+$ react-native run-android
+info Running jetifier to migrate libraries to AndroidX. You can disable it using "--no-jetifier" flag.
+Jetifier found 870 file(s) to forward-jetify. Using 4 workers...
+info JS server already running.
+info Installing the app...
+
+> Task :app:compileDebugJavaWithJavac
+
+> Task :app:installDebug
+Installing APK 'app-debug.apk' on 'Redmi Note 7 - 10' for app:debug
+Installed on 1 device.
+
+BUILD SUCCESSFUL in 1m 31s
+34 actionable tasks: 14 executed, 20 up-to-date
+info Connecting to the development server...
+8081
+info Starting the app on "68efca1a"...
+Starting: Intent { cmp=com.arefin.mytime/.MainActivity }
+Error type 3
+Error: Activity class {com.arefin.mytime/com.arefin.mytime.MainActivity} does not exist.
+Done in 98.22s.
+arefin@arefin-HP-ProBook-450-G0:~/Programs/eazm__/Android_Integration_to_RN_Java$ 
+
+
+```
+
