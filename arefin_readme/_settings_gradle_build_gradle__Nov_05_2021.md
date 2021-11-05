@@ -1,3 +1,37 @@
+
+
+
+## __settings.gradle__file:
+
+```java
+
+
+
+/*
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+*/
+
+rootProject.name = "MyTime"
+include ':app'
+
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+
+
+```
+
+## since I put the code in android> build.gradle file:
+-------------------------here-------------- below
+-------------------------here-------------- below
+
+```java
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
@@ -11,8 +45,9 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
-
+-------------------------here-------------- below
+-------------------------here-------------- below
+-------------------------here-------------- below
 allprojects {
     repositories {
 
@@ -47,3 +82,4 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+```
