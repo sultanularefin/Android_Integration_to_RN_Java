@@ -92,3 +92,33 @@ task clean(type: Delete) {
 
 
 Let's add some native code in order to start the **React Native runtime** and tell it **to render our JS component**. To do this, we're going to **create an Activity that creates a ReactRootView, starts a React** application inside it and sets it as the main content view.
+
+
+
+### 
+
+```java
+
+public class MyReactActivity extends Activity implements DefaultHardwareBackBtnHandler {
+    private ReactRootView mReactRootView;
+    private ReactInstanceManager mReactInstanceManager;
+```
+
+## Next, we need to pass some activity lifecycle callbacks to the **ReactInstanceManager and ReactRootView**:
+
+
+## https://github.com/facebook/react-native/issues/28532#issuecomment-624175121
+
+1. https://github.com/facebook/react-native/issues/28532#issuecomment-624175121
+2. https://github.com/facebook/react-native/issues/28532#issuecomment-624175121
+3. https://github.com/facebook/react-native/issues/28532#issuecomment-624175121
+4. https://github.com/facebook/react-native/issues/28532#issuecomment-624175121
+
+
+6. https://proandroiddev.com/think-before-using-buildconfig-debug-f2e279da7bad?gi=46a1d37a2c2
+7. https://proandroiddev.com/think-before-using-buildconfig-debug-f2e279da7bad?gi=46a1d37a2c2
+8. https://proandroiddev.com/think-before-using-buildconfig-debug-f2e279da7bad?gi=46a1d37a2c2
+9. https://proandroiddev.com/think-before-using-buildconfig-debug-f2e279da7bad?gi=46a1d37a2c2
+
+
+
