@@ -2,7 +2,11 @@ package com.arefin.mytime;
 //package com.google.samples.apps.sunflower
 //package com.arefin.mytime.Buil
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.KeyEvent;
 
 //import com.arefin.mytime.MainActivity;
@@ -20,7 +24,7 @@ import java.util.List;
 public class MyReactActivity extends Activity implements DefaultHardwareBackBtnHandler {
     private ReactRootView mReactRootView;
     private ReactInstanceManager mReactInstanceManager;
-
+    private final int OVERLAY_PERMISSION_REQ_CODE = 1;  // Choose any value
 
     @Override
     protected void onPause() {
@@ -94,6 +98,14 @@ public class MyReactActivity extends Activity implements DefaultHardwareBackBtnH
         }
         return super.onKeyUp(keyCode, event);
     }
+
+//      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//        if (!Settings.canDrawOverlays(this)) {
+//            Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+//                    Uri.parse("package:" + getPackageName()));
+//            startActivityForResult(intent, OVERLAY_PERMISSION_REQ_CODE);
+//        }
+//    }
 
 
 
