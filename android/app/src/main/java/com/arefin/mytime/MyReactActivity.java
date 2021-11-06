@@ -109,6 +109,23 @@ public class MyReactActivity extends Activity implements DefaultHardwareBackBtnH
 
 
 
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == OVERLAY_PERMISSION_REQ_CODE) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (!Settings.canDrawOverlays(this)) {
+                    // SYSTEM_ALERT_WINDOW permission not granted
+                }
+            }
+        }
+        mReactInstanceManager.onActivityResult(this, requestCode, resultCode, data);
+    }
+
+
+
     @Override
     public void onBackPressed() {
         if (mReactInstanceManager != null) {
