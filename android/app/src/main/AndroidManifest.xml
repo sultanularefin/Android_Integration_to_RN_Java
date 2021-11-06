@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyTime">
         <activity
-            android:name=".MyReactActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="true">
@@ -30,9 +30,11 @@
              android:label="@string/app_name"
              android:theme="@style/Theme.MyTime.NoActionBar">-->
 
-        <!--        android:name=".MyReactActivity"-->
-        <!--        android:label="@string/app_name"-->
-        <!--        android:theme="@style/Theme.AppCompat.Light.NoActionBar"-->
+        <activity
+            android:name="com.arefin.mytime.MyReactActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
 
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
     </application>

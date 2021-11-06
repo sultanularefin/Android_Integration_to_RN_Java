@@ -18,7 +18,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
-//import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 // <== //public class MainActivity extends AppCompatActivity {
 
 import com.arefin.mytime.databinding.ActivityMainBinding;

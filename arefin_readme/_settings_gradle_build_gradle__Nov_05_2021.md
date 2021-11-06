@@ -314,6 +314,8 @@ arefin@arefin-HP-ProBook-450-G0:~/Programs/byvl/tripzChatHook$
 
 ```
 
+```java
+
 
 
 arefin@arefin-HP-ProBook-450-G0:~/Programs/byvl/tripzChatHook$ cd android
@@ -323,3 +325,17 @@ app/src/main/java/com/tripzchat/MainActivity.java:30:      return new RNGestureH
 app/src/main/java/com/tripzchat/MainActivity.java:36:// android/app/.../MainActivity.java
 app/src/main/AndroidManifest.xml:35:                android:name=".MainActivity"
 arefin@arefin-HP-ProBook-450-G0:~/Programs/byvl/tripzChatHook/android$ 
+
+
+app/src/main/java/com/arefin/mytime/MyReactActivity.java:8:import com.arefin.mytime.MainActivity;
+app/src/main/java/com/arefin/mytime/MainActivity.java:24:public class MainActivity extends AppCompatActivity {
+app/src/main/res/layout/app_bar_main.xml:7:    tools:context=".MainActivity">
+app/src/main/AndroidManifest.xml:28:        <!-- android:name=".MainActivity"
+arefin@arefin-HP-ProBook-450-G0:~/Programs/eazm__/Android_Integration_to_RN_Java/android$ 
+
+
+
+
+
+
+```

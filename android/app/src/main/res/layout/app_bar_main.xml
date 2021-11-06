@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyReactActivity">
+    tools:context=".MainActivity">
 <!--    tools:context=".MainActivity">-->
 <!--    old commented on nov 6_2021..-->
     <com.google.android.material.appbar.AppBarLayout
