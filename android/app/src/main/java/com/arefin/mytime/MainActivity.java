@@ -1,5 +1,6 @@
 package com.arefin.mytime;
 
+//import android.app.Activity; => public class MainActivity extends Activity {
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
@@ -17,11 +18,14 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.AppCompatActivity;
+//import androidx.appcompat.app.AppCompatActivity;
+// <== //public class MainActivity extends AppCompatActivity {
 
 import com.arefin.mytime.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
+//    public class MainActivity extends Activity {
+
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;

@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 
-import com.arefin.mytime.MainActivity;
+//import com.arefin.mytime.MainActivity;
 //import com.facebook.react.PackageList;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactInstanceManager;

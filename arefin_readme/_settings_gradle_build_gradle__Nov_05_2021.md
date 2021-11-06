@@ -286,3 +286,40 @@ arefin@arefin-HP-ProBook-450-G0:~/Programs/eazm__/Android_Integration_to_RN_Java
 
 ```
 
+# For tripzchat 
+
+```java
+
+> Task :app:installDebug
+Installing APK 'app-debug.apk' on 'Redmi Note 7 - 10' for app:debug
+Installed on 1 device.
+w: Detected multiple Kotlin daemon sessions at build/kotlin/sessions
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/7.0.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+Execution optimizations have been disabled for 9 invalid unit(s) of work during this build to ensure correctness.
+Please consult deprecation warnings for more details.
+
+BUILD SUCCESSFUL in 2m 3s
+483 actionable tasks: 479 executed, 4 up-to-date
+info Connecting to the development server...
+8081
+info Starting the app on "68efca1a"...
+Starting: Intent { cmp=com.byvl.tripzchat/.MainActivity }
+Done in 131.77s.
+arefin@arefin-HP-ProBook-450-G0:~/Programs/byvl/tripzChatHook$ 
+
+
+```
+
+
+
+arefin@arefin-HP-ProBook-450-G0:~/Programs/byvl/tripzChatHook$ cd android
+## arefin@arefin-HP-ProBook-450-G0:~/Programs/byvl/tripzChatHook/android$ grep -inrIH ".MainActivity"
+app/src/main/java/com/tripzchat/MainActivity.java:13:public class MainActivity extends ReactActivity {
+app/src/main/java/com/tripzchat/MainActivity.java:30:      return new RNGestureHandlerEnabledRootView(MainActivity.this);
+app/src/main/java/com/tripzchat/MainActivity.java:36:// android/app/.../MainActivity.java
+app/src/main/AndroidManifest.xml:35:                android:name=".MainActivity"
+arefin@arefin-HP-ProBook-450-G0:~/Programs/byvl/tripzChatHook/android$ 
